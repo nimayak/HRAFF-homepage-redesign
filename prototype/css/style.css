@@ -1,0 +1,422 @@
+/* Defaults */
+
+* { box-sizing:border-box; }
+body { margin:0; }
+h1, h2, h3, h4, h5, h6, p, ul, ol { margin-top:0; }
+a { text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+
+/* Common branding */
+
+
+
+body {
+  background-color:#fff;
+  color: #7f878f;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background-color: #fff;
+  border-bottom:5px solid #000;
+}
+
+h1 a {
+  color:#fff;
+}
+
+button {
+    background-color: #2274a5; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.topics {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: #fa9d67;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-container-film {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
+
+.grid-item-film {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid-item-footer {
+  border: none;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 20px;
+  color: white;
+}
+
+.blue-header {
+  color: #2274a5;
+}
+
+.orange-header {
+  color: #f75c03;
+}
+
+.pink-header {
+  color: #d90368;
+}
+
+p {
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+nav a {
+  color:#000;
+  font-weight:bold;
+}
+
+.profile {
+  border-radius: 50%;
+  border:5px solid #f56a6a;
+}
+
+footer {
+  background-color: #3d4348;
+  color: #fff;
+}
+
+/*DESKTOP*/
+
+@media (min-width:1200px) {
+	/* Desktop layout */
+	.mobile {
+		display:none;
+	}
+
+  #mobile {
+    display:none;
+  }
+
+  html {
+  background-image: url("bg.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  }
+
+	body {
+	  margin: 0;
+	  line-height: 1.8;
+	  width:1200px;
+	  padding:30px;
+    padding-top: 0px;
+	  margin-left:auto;
+	  margin-right:auto;
+	  position:relative;
+	}
+
+	header {
+	  line-height: 60px;
+	  display:grid;
+	  grid-template-columns: auto auto;
+    position: fixed;
+    width: 1140px;
+	}
+
+	h1 {
+	  font-size:36px;
+	}
+
+  input[type=email] {
+    width: 40%;
+    padding: 12px 20px;
+    margin-top: 15px;
+    margin-bottom: 100px;
+    margin-left: 290px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #ADD8E6;
+    color: #2274a5;
+}
+
+  #email {
+    height:48px;
+      font-size:14pt;
+  }
+
+  .social-media {
+    margin-right:0px;
+  }
+
+  .hraff-logo {
+    width: 110px;
+    margin-top: 20px;
+  }
+
+  .dates {
+  }
+
+  .films {
+    grid-template-columns: auto 340px;
+  }
+
+  .feature-image img {
+    width: 100%;
+    height: 520px;
+    margin-top: 175px;
+  }
+
+  .news, .youtube{
+    margin-left: auto;
+    font-size: 36px;
+  }
+
+  .newsletter {
+    margin-left: 350px;
+    margin-top: 0px;
+  }
+
+	nav {
+	  line-height:60px;
+	  font-size:14px;
+	  text-align:left;
+    margin-right:350px;
+    margin-top: 80px;
+    width: 1025px;
+	}
+
+	nav a { margin-left: 30px; }
+
+	section {
+	  display:grid;
+	  grid-template-columns: auto 340px;
+	  padding:30px;
+	  grid-gap: 60px;
+	}
+
+	article { padding-bottom: 30px; }
+
+	h2 { 
+    font-size: 36px; 
+    margin-left:425px;
+    margin-top:50px;
+  }
+
+	img { width: 680px; }
+
+	aside {
+	  font-size: 14px;
+	  padding-bottom: 60px;
+    text-align: justify;
+    text-justify: inter-word;
+	}
+
+	aside h2 { font-size: 20px; }
+
+	.profile {
+	  width: 120px;
+	  float: left;
+	  margin-right: 15px;
+	  margin-bottom: 15px;
+	}
+
+	footer {
+	  padding: 30px;
+	  text-align:center;
+	}
+
+	footer p { margin:0; }
+
+}
+
+
+@media (max-width:500px) {
+  /* Mobile layout */
+	
+  /* article { background-color: #ff0;	}
+	aside { background-color: #0ff;	} */
+  #not-mobile {
+    display: none;
+  }
+  
+  html {
+    width: 500px;
+  }
+  #page { 
+  	transition: 0.5s; 
+  }
+
+  nav.mobile {
+  	position:fixed;
+  	top:0;
+  	right:0;
+  	background-color: #993333;
+  	width:70vw;
+  	height: 100vh;
+  	padding: 60px 40px;
+  	z-index: 1;
+  	transform: translateX( 70vw );
+  	transition: 0.5s;
+  }
+  
+  nav.mobile a {
+  	display: block;
+  	padding: 20px 0px;
+  	opacity: 0;
+  	transition: 0.5s;
+  }
+
+  input[type=email] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #ADD8E6;
+    color: #2274a5;
+}
+
+  #email {
+    margin-left: 70px;
+    height:48px;
+      font-size:14pt;
+  }
+
+  
+  .menu-open nav.mobile a {
+  	opacity: 1;
+  }
+  
+  #burger {
+  	width: 48px; 
+  	height: 48px;
+  	padding: 12px;
+ 	position: absolute;
+ 	top:15px;
+ 	right: 10px;
+ 	z-index: 2;
+  }
+  
+  #burger .line {
+  	background-color: #000;
+  	height:4px;
+  	margin-bottom: 6px;
+  	transition: 0.5s;
+  }
+  
+  .menu-open {
+  	height: 100vh;
+  	overflow: hidden;
+  	}
+  
+  .menu-open #page {
+  	transform:translateX( -50vw );
+  	background-color: #fff;
+  	filter: brightness(20%);
+  	pointer-events: none;
+  }
+  
+  .menu-open #line1 { 
+  	transform: translateY( 10px ) rotate( 45deg );
+  }
+  
+  .menu-open #line2 {
+  	opacity: 0;
+  }
+  
+  .menu-open #line3 { 
+  	transform: translateY( -10px ) rotate( 135deg );
+  }
+  
+  .menu-open nav.mobile {
+  	transform: translateX( 0vw );
+  }
+
+  .hraff-logo {
+    width: 110px;
+    margin-top: 10px;
+    margin-left: 175px;
+  }
+
+  img .newsimage {
+    width: 340px;
+  }
+  
+  img {
+    max-width:100%;
+    height:auto;
+  }
+  
+  .profile {
+    width:25%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+	  margin-right: 15px;
+	  margin-bottom: 5px;
+    shape-outside: circle(50%);
+  }
+  
+  .video {
+    background: #d3dbde;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+    position: relative;
+  }
+
+  .video iframe {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+  }
+  
+  .desktop { display:none; }
+  
+  h1 { margin:0; }
+  
+  header { padding: 20px; 
+  }
+  
+  section { padding:20px; }
+  
+  footer { padding: 20px; width: 500px;}
+
+}
